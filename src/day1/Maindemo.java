@@ -7,8 +7,15 @@ public class Maindemo {
 	}
 	public static void main(String[] args) {
 		System.out.println("代码片段A!!");
-		Maindemo.doWork();
+//		Maindemo.doWork();
+		methodDemo method = new methodDemo();
+		method.code();
 		System.out.println("代码片段B!!");
 		Maindemo.doWork();
 	}
 }
+class methodDemo{
+	void code(){
+		System.out.println("共同的代码块");
+	}
+		}
